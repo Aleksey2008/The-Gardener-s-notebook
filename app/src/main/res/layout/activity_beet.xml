@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vegetables_list.beet"
+    android:background="@drawable/fon">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:text="Свекла"
+        android:background="@color/but"
+        android:textSize="5mm"
+        android:id="@+id/top"
+        android:textColor="@color/white"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/top"
+        android:layout_above="@id/bottom"
+        android:scrollbars="vertical"
+        android:layout_marginLeft="2mm"
+        android:layout_marginRight="2mm">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fon"
+                    android:textColor="@color/white"
+                    android:textSize="3mm"
+                    android:text="Подготовка к посадке:\n\n
+
+1. Выбор сорта свеклы:\n
+   Выберите сорт свеклы в зависимости от ваших предпочтений — для употребления в свежем виде, консервирования или хранения.\n\n
+
+2. Подготовка почвы:\n
+   Свекла предпочитает легкую, рыхлую почву с хорошей дренажной способностью. Удобрьте почву компостом или перегноем.\n\n
+
+3. Выбор места:\n
+   Разместите грядку на солнечном участке, чтобы свекла получала достаточно света для формирования красивых корнеплодов.\n\n
+
+ Посадка свеклы:\n\n
+
+1. Прямой посев:\n
+   - Прямой посев свеклы выполняйте в начале весны, как только почва прогреется.\n
+   - Глубина посева может варьироваться, но обычно 1-2 см глубиной.\n\n
+
+ Уход за свеклой:\n\n
+
+1. Полив:\n
+   - Регулярно поливайте свеклу, особенно в период сухости. Избегайте переувлажнения, чтобы предотвратить раскол корнеплодов.\n\n
+
+2. Удобрение:\n
+   - Внесите удобрение для корнеплодных культур в начале вегетационного периода.\n\n
+
+3. Прореживание:\n
+   - Прореживайте растения, оставляя между ними достаточное расстояние (10-15 см), чтобы корнеплоды имели место для развития.\n\n
+
+4. Прополка:\n
+   - Удаляйте сорняки вокруг свеклы, чтобы не конкурировать за питательные вещества и влагу.\n\n
+
+5. Мульчирование:\n
+   - Мульчируйте почву вокруг растений, чтобы удерживать влагу и предотвращать рост сорняков.\n\n
+
+ Сбор урожая:\n\n
+
+1. Определение готовности:\n
+   - Сбор свеклы производите, когда корнеплоды достигнут нужного размера и станут легко отделяться от почвы.\n\n
+
+2. Сохранение урожая:\n
+   - Отрезайте листья, оставляя 2-3 см стебля, и храните свеклу в прохладном, темном месте. Листья можно использовать для корма животным или компостирования."/>
+            </ScrollView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Заметки"
+                android:background="@color/but"
+                android:textColor="@color/white"
+                android:textSize="5mm"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Заметки"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:textColorHint="@color/black"
+                android:id="@+id/edtxt_tom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Настройки уведомлений"
+                android:background="@color/but"
+                android:textColor="@color/white"
+                android:textSize="5mm"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Периодичность отправки уведомлений(в часах)"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:textColorHint="@color/black"
+                android:id="@+id/edtxt_nt"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_ad"
+                android:text="Установить"
+                android:textSize="5mm"
+                android:onClick="btn_ad"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_del"
+                android:text="Удалить"
+                android:textSize="5mm"
+                android:onClick="btn_del"/>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom"
+        android:text="Обратно"
+        android:textSize="5mm"
+        android:onClick="home"/>
+
+</RelativeLayout>

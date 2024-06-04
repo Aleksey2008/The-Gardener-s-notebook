@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vegetables_list.eggplants"
+    android:background="@drawable/fon">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:text="Баклажаны"
+        android:background="@color/but"
+        android:textSize="5mm"
+        android:id="@+id/top"
+        android:textColor="@color/white"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/top"
+        android:layout_above="@id/bottom"
+        android:scrollbars="vertical"
+        android:layout_marginLeft="2mm"
+        android:layout_marginRight="2mm">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fon"
+                    android:textColor="@color/white"
+                    android:textSize="3mm"
+                    android:text="Подготовка к посадке:\n\n
+
+1. Выбор сорта баклажанов:\n
+   Выберите сорт баклажанов в зависимости от ваших предпочтений и климатических условий. Существует множество сортов с различными формами и цветами плодов.\n\n
+
+2. Подготовка почвы:\n
+   Баклажаны предпочитают рыхлую, плодородную почву. Добавьте компост или перегной для обеспечения хорошего питания.\n\n
+
+3. Выбор места:\n
+   Расположите грядку на солнечном месте, где баклажаны получат не менее 6-8 часов солнечного света в день.\n\n
+
+ Посадка баклажанов:\n\n
+
+1. Выращивание через рассаду:\n
+   - Посеивайте семена баклажанов за 8-10 недель до последнего ожидаемого заморозка.\n
+   - Пересаживайте рассаду в грядку после того, как минует угроза заморозков.\n\n
+
+ Уход за баклажанами:\n\n
+
+1. Полив:\n
+   - Регулярно поливайте баклажаны, поддерживая почву влажной. Избегайте переувлажнения, чтобы предотвратить гниение корней.\n\n
+
+2. Удобрение:\n
+   - Внесите удобрение для плодовых культур в начале сезона и затем через каждые 3-4 недели.\n\n
+
+3. Поддержка растений:\n
+   - Используйте опоры или каркасы для поддержки баклажанов, особенно если они сорта с крупными плодами.\n\n
+
+4. Прополка и мульчирование:\n
+   - Регулярно пропалывайте грядку и мульчируйте почву, чтобы уменьшить рост сорняков и сохранить влагу.\n\n
+
+5. Обрезка:\n
+   - Проводите обрезку боковых побегов, чтобы стимулировать рост и развитие плодов.\n\n
+
+6. Защита от болезней и вредителей:\n
+   - Обратите внимание на признаки болезней или вредителей и применяйте соответствующие меры контроля.\n\n
+
+ Сбор урожая:\n\n
+
+1. Определение готовности:\n
+   - Собирайте баклажаны, когда они достигнут нужного размера и приобретут яркий цвет. Отрывайте плоды, когда они еще твердые и блестящие.\n\n
+
+2. Хранение урожая:\n
+   - Храните баклажаны в прохладном и сухом месте. Избегайте хранения в холодильнике, так как низкие температуры могут повреждать плоды."/>
+            </ScrollView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Заметки"
+                android:background="@color/but"
+                android:textColor="@color/white"
+                android:textSize="5mm"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Заметки"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:textColorHint="@color/black"
+                android:id="@+id/edtxt_tom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Настройки уведомлений"
+                android:background="@color/but"
+                android:textColor="@color/white"
+                android:textSize="5mm"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Периодичность отправки уведомлений(в часах)"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:textColorHint="@color/black"
+                android:id="@+id/edtxt_nt"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_ad"
+                android:text="Установить"
+                android:textSize="5mm"
+                android:onClick="btn_ad"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_del"
+                android:text="Удалить"
+                android:textSize="5mm"
+                android:onClick="btn_del"/>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom"
+        android:text="Обратно"
+        android:textSize="5mm"
+        android:onClick="home"/>
+
+</RelativeLayout>

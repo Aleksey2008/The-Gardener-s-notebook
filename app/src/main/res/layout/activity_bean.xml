@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vegetables_list.bean"
+    android:background="@drawable/fon">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:text="Фасоль"
+        android:background="@color/but"
+        android:textSize="5mm"
+        android:id="@+id/top"
+        android:textColor="@color/white"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/top"
+        android:layout_above="@id/bottom"
+        android:scrollbars="vertical"
+        android:layout_marginLeft="2mm"
+        android:layout_marginRight="2mm">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fon"
+                    android:textColor="@color/white"
+                    android:textSize="3mm"
+                    android:text="Подготовка к посадке:\n\n
+
+1. Выбор сорта фасоли:\n
+   Выберите сорт фасоли в зависимости от ваших предпочтений — кустовая, стручковая или ползучая. Также учтите климатические особенности вашего региона.\n\n
+
+2. Подготовка почвы:\n
+   Фасоль предпочитает рыхлую, плодородную почву. Удобрьте почву компостом или перегнойом, чтобы обеспечить достаточное питание.\n\n
+
+3. Выбор места:\n
+   Расположите грядку на солнечном участке, где фасоль получит минимум 6-8 часов солнечного света в день.\n\n
+
+ Посадка фасоли:\n\n
+
+1. Прямой посев:\n
+   - Посев фасоли осуществляйте в грунт после окончания угрозы заморозков, когда почва прогреется.\n
+   - Расстояние между рядами должно быть примерно 60 см, а между растениями в ряду — 15-20 см.\n\n
+
+ Уход за фасолью:\n\n
+
+1. Полив:\n
+   - Регулярно поливайте фасоль, особенно в период цветения и образования стручков. Избегайте пересушивания почвы.\n\n
+
+2. Удобрение:\n
+   - Внесите удобрение для бобовых культур в начале вегетационного периода и повторяйте при необходимости.\n\n
+
+3. Поддержка растений:\n
+   - Для стручковой фасоли установите опоры или сетку, чтобы облегчить сбор урожая и предотвратить повреждение растений.\n\n
+
+4. Прополка:\n
+   - Регулярно удаляйте сорняки вокруг растений, чтобы предотвратить конкуренцию за влагу и питательные вещества.\n\n
+
+ Сбор урожая:\n\n
+
+1. Определение готовности:\n
+   - Стручки фасоли собирайте, когда они достигнут нужной длины и станут твердыми, но еще до появления зрелых семян.\n\n
+
+2. Регулярный сбор:\n
+   - Регулярно собирайте стручки, чтобы стимулировать новый рост и продолжительное плодоношение.\n\n
+
+ Хранение фасоли:\n\n
+
+1. Свежая фасоль:\n
+   - Свежую фасоль храните в холодильнике и употребляйте в течение нескольких дней.\n\n
+
+2. Консервация:\n
+   - Если планируете сохранить урожай, перерабатывайте фасоль в консервы, маринады или замораживайте."/>
+            </ScrollView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Заметки"
+                android:background="@color/but"
+                android:textColor="@color/white"
+                android:textSize="5mm"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Заметки"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:textColorHint="@color/black"
+                android:id="@+id/edtxt_tom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Настройки уведомлений"
+                android:background="@color/but"
+                android:textColor="@color/white"
+                android:textSize="5mm"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Периодичность отправки уведомлений(в часах)"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:textColorHint="@color/black"
+                android:id="@+id/edtxt_nt"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_ad"
+                android:text="Установить"
+                android:textSize="5mm"
+                android:onClick="btn_ad"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_del"
+                android:text="Удалить"
+                android:textSize="5mm"
+                android:onClick="btn_del"/>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom"
+        android:text="Обратно"
+        android:textSize="5mm"
+        android:onClick="home"/>
+
+</RelativeLayout>

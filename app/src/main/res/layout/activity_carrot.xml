@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vegetables_list.carrot"
+    android:background="@drawable/fon">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:text="Морковь"
+        android:background="@color/but"
+        android:textSize="5mm"
+        android:id="@+id/top"
+        android:textColor="@color/white"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/top"
+        android:layout_above="@id/bottom"
+        android:scrollbars="vertical"
+        android:layout_marginLeft="2mm"
+        android:layout_marginRight="2mm">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fon"
+                    android:textColor="@color/white"
+                    android:textSize="3mm"
+                    android:text="Подготовка к посадке:\n\n
+
+1. Выбор сорта моркови:\n
+   Выберите сорт моркови в зависимости от ваших предпочтений и условий выращивания. Существует много сортов с разным цветом, формой и временем созревания.\n\n
+
+2. Подготовка почвы:\n
+   Морковь предпочитает рыхлую, легкую почву без камней. Откопайте почву, добавьте песок для улучшения дренажа и органические удобрения.\n\n
+
+3. Выбор места:\n
+   Расположите грядку на солнечном месте, чтобы морковь получала достаточно света для хорошего развития корнеплодов.\n\n
+
+ Посадка моркови:\n\n
+
+1. Прямой посев:\n
+   - Морковь лучше всего выращивать сразу на постоянном месте. Сеять можно весной или ранней осенью.\n
+   - Посев производится на глубину 1-2 см, с расстоянием между рядами около 20-25 см.\n\n
+
+ Уход за морковью:\n\n
+
+1. Полив:\n
+   - Регулярно поливайте морковь, особенно в период засухи. Избегайте переувлажнения, чтобы предотвратить гниение корнеплодов.\n\n
+
+2. Разрыхление почвы:\n
+   - Поддерживайте почву в рыхлом состоянии, регулярно разрыхляя ее, чтобы корнеплоды могли свободно развиваться.\n\n
+
+3. Удобрение:\n
+   - Внесите удобрение для корнеплодных культур в начале вегетационного периода.\n\n
+
+4. Защита от сорняков:\n
+   - Мульчируйте почву вокруг растений, чтобы уменьшить рост сорняков и сохранить влагу.\n\n
+
+5. Тоннели и укрытия:\n
+   - Используйте тоннели или укрытия в холодные периоды, чтобы продлить сезон и улучшить условия для роста.\n\n
+
+ Сбор урожая:\n\n
+
+1. Определение готовности:\n
+   - Собирайте морковь, когда корнеплоды достигнут желаемого размера. Это обычно занимает 70-90 дней от посева.\n\n
+
+2. Хранение урожая:\n
+   - Храните морковь в песке или влажном песке в прохладном, темном месте. Это помогает сохранить свежесть и витамины.\n\n"/>
+            </ScrollView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Заметки"
+                android:background="@color/but"
+                android:textColor="@color/white"
+                android:textSize="5mm"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Заметки"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:textColorHint="@color/black"
+                android:id="@+id/edtxt_tom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Настройки уведомлений"
+                android:background="@color/but"
+                android:textColor="@color/white"
+                android:textSize="5mm"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Периодичность отправки уведомлений(в часах)"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:textColorHint="@color/black"
+                android:id="@+id/edtxt_nt"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_ad"
+                android:text="Установить"
+                android:textSize="5mm"
+                android:onClick="btn_ad"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_del"
+                android:text="Удалить"
+                android:textSize="5mm"
+                android:onClick="btn_del"/>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom"
+        android:text="Обратно"
+        android:textSize="5mm"
+        android:onClick="home"/>
+
+</RelativeLayout>

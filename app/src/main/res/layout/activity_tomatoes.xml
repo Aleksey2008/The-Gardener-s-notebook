@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vegetables_list.tomatoes"
+    android:background="@drawable/fon">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:text="Томаты"
+        android:background="@color/but"
+        android:textSize="5mm"
+        android:id="@+id/top"
+        android:textColor="@color/white"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/top"
+        android:layout_above="@id/bottom"
+        android:scrollbars="vertical"
+        android:layout_marginLeft="2mm"
+        android:layout_marginRight="2mm">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/fon"
+                        android:textColor="@color/white"
+                        android:textSize="3mm"
+                        android:text=" Подготовка к посадке:
+\n\n
+1. Выбор сорта томатов:\n
+   - Выберите сорт томатов, соответствующий вашим предпочтениям и условиям выращивания. Различные сорта подходят для открытого грунта и теплиц.
+\n\n
+2. Подготовка почвы:\n
+  - Томаты любят рыхлую, плодородную почву с хорошей дренажной способностью. Подготовьте грядку, добавив в почву компост или перегной.
+\n\n
+3. Выбор места:\n
+   - Расположите грядку там, где томаты будут получать достаточно солнечного света (не менее 6-8 часов в день). Учтите, что томаты не любят затенение.
+\n\n
+ Посадка томатов:\n\n
+
+1. Посев семян (при выращивании из семян):\n
+   - Посейте семена в горшочки или контейнеры за 6-8 недель до последнего ожидаемого заморозка.\n
+   - Удостоверьтесь, что почва влажная, но не пересыщена.\n\n
+
+2. Пересадка рассады (при выращивании из рассады):\n
+   - Пересадите рассаду в грядку после того, как минует угроза заморозков.\n
+   - Растения должны быть расположены на расстоянии 45-60 см друг от друга.\n\n
+
+ Уход за томатами:\n\n
+
+1. Полив:\n
+   - Регулярно поливайте томаты, особенно в период сухости. Избегайте переувлажнения, чтобы предотвратить гниение корней.\n\n
+
+2. Удобрение:\n
+   - Подкармливайте томаты универсальным удобрением для овощей в начале сезона и затем через каждые 2-3 недели.\n\n
+
+3. Поддержка растений:\n
+   - Установите опоры или каркасы для поддержки растений, особенно если выращиваете высокие сорта томатов.\n\n
+
+4. Прополка и мульчирование:\n
+   - Регулярно пропалывайте грядку и мульчируйте почву, чтобы удерживать влагу и предотвращать рост сорняков.\n\n
+
+5. Защита от болезней и вредителей:\n
+   - Обратите внимание на признаки болезней или наличие вредителей. Применяйте соответствующие меры контроля и профилактики.\n\n
+
+ Сбор урожая:\n\n
+
+1. Определение готовности:\n
+   - Сбор томатов производите, когда они полностью созрели и приобрели яркий цвет. Отрывайте плоды, когда они легко отделяются от растения.\n\n
+
+2. Хранение урожая:\n
+   - Храните томаты в прохладном и сухом месте. Избегайте хранения в холодильнике, так как холодные температуры могут влиять на вкус.\n\n
+
+"/>
+            </ScrollView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Заметки"
+                android:background="@color/but"
+                android:textColor="@color/white"
+                android:textSize="5mm"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Заметки"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:textColorHint="@color/black"
+                android:id="@+id/edtxt_tom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Настройки уведомлений"
+                android:background="@color/but"
+                android:textColor="@color/white"
+                android:textSize="5mm"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Периодичность отправки уведомлений(в часах)"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:textColorHint="@color/black"
+                android:id="@+id/edtxt_nt"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_ad"
+                android:text="Установить"
+                android:textSize="5mm"
+                android:onClick="btn_ad"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_del"
+                android:text="Удалить"
+                android:textSize="5mm"
+                android:onClick="btn_del"/>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom"
+        android:text="Обратно"
+        android:textSize="5mm"
+        android:onClick="home"/>
+
+
+</RelativeLayout>

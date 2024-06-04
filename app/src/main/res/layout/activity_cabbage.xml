@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vegetables_list.cabbage"
+    android:background="@drawable/fon">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:text="Капуста"
+        android:background="@color/but"
+        android:textSize="5mm"
+        android:id="@+id/top"
+        android:textColor="@color/white"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/top"
+        android:layout_above="@id/bottom"
+        android:scrollbars="vertical"
+        android:layout_marginLeft="2mm"
+        android:layout_marginRight="2mm">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fon"
+                    android:textColor="@color/white"
+                    android:textSize="3mm"
+                    android:text="Подготовка к посадке:\n\n
+
+1. Выбор сорта капусты:\n
+   Выберите сорт капусты в соответствии с вашими предпочтениями — белокочанная, краснокочанная, савойская и т.д.\n\n
+
+2. Подготовка почвы:\n
+   Капуста предпочитает рыхлую, плодородную почву с нейтральной или слабокислой реакцией. Удобрьте почву органическим веществом, таким как компост.\n\n
+
+3. Выбор места:\n
+   Разместите грядку на солнечном месте с хорошей вентиляцией. Избегайте посадки в низинах, чтобы предотвратить задержку холодного воздуха.\n\n
+
+ Посадка капусты:\n\n
+
+1. Прямой посев или рассада:\n
+   - Прямой посев выполняйте в грунт после ухода за последними заморозками.\n
+   - Рассаду можно выращивать в закрытом помещении и пересаживать на грядку после того, как растения станут достаточно крепкими (через 4-6 недель).\n\n
+
+ Уход за капустой:\n\n
+
+1. Полив:\n
+   - Регулярно поливайте капусту, особенно в период образования головок. Избегайте переувлажнения, чтобы предотвратить гниение корней.\n\n
+
+2. Удобрение:\n
+   - Внесите удобрение для капустных культур в начале вегетационного периода и после образования головок.\n\n
+
+3. Прополка:\n
+   - Удаляйте сорняки вокруг растений, особенно на ранних стадиях роста, чтобы предотвратить конкуренцию за влагу и питательные вещества.\n\n
+
+4. Защита от вредителей:\n
+   - Применяйте меры контроля за вредителями, такими как блошки капустные и белянки. Используйте средства биологического или химического контроля при необходимости.\n\n
+
+ Сбор урожая:\n\n
+
+1. Определение готовности:\n
+   - Сбор капусты производите, когда головки достигнут нужного размера и станут плотными.\n\n
+
+2. Хранение урожая:\n
+   - Храните капусту в прохладном, сухом месте. Белокочанную капусту можно хранить в холодильнике, а краснокочанную и савойскую лучше всего сохранять в подвале или другом прохладном помещении."/>
+            </ScrollView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Заметки"
+                android:background="@color/but"
+                android:textColor="@color/white"
+                android:textSize="5mm"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Заметки"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:textColorHint="@color/black"
+                android:id="@+id/edtxt_tom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Настройки уведомлений"
+                android:background="@color/but"
+                android:textColor="@color/white"
+                android:textSize="5mm"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Периодичность отправки уведомлений(в часах)"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:textColorHint="@color/black"
+                android:id="@+id/edtxt_nt"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_ad"
+                android:text="Установить"
+                android:textSize="5mm"
+                android:onClick="btn_ad"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_del"
+                android:text="Удалить"
+                android:textSize="5mm"
+                android:onClick="btn_del"/>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom"
+        android:text="Обратно"
+        android:textSize="5mm"
+        android:onClick="home"/>
+
+</RelativeLayout>

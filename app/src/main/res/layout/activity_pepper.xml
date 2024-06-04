@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vegetables_list.pepper"
+    android:background="@drawable/fon">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:text="Перец"
+        android:background="@color/but"
+        android:textSize="5mm"
+        android:id="@+id/top"
+        android:textColor="@color/white"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/top"
+        android:layout_above="@id/bottom"
+        android:scrollbars="vertical"
+        android:layout_marginLeft="2mm"
+        android:layout_marginRight="2mm">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fon"
+                    android:textColor="@color/white"
+                    android:textSize="3mm"
+                    android:text="Подготовка к посадке:\n\n
+
+1. Выбор сорта перца:\n
+   Выберите сорт перца, который соответствует вашим предпочтениям — сладкий, острый, крупноплодный и т.д.\n\n
+
+2. Подготовка почвы:\n
+   Подготовьте почву, добавив в нее компост или перегной для обеспечения плодородия. Перцы предпочитают нейтральную или слегка кислую почву.\n\n
+
+3. Выбор места:\n
+   Расположите грядку на солнечном месте с хорошей вентиляцией. Перцы также любят тепло, поэтому избегайте мест с постоянным сквозняком.\n\n
+
+ Посадка перца:\n\n
+
+1. Семена:\n
+   - Если сеете перец из семян, начните процесс за 8-10 недель до последнего заморозка.\n
+   - Семена размещайте в горшочках на глубине 0,5-1 см.\n\n
+
+2. Рассада:\n
+   - Пересаживайте рассаду в грядку после того, как прошла угроза заморозков.\n
+   - Растения располагайте на расстоянии 30-45 см друг от друга.\n\n
+
+ Уход за перцем:\n\n
+
+1. Полив:\n
+   - Регулярно поливайте перец, особенно в период сухости. Удостоверьтесь, что почва равномерно влажна.\n\n
+
+2. Удобрение:\n
+   - Подкармливайте перец удобрениями для плодовых культур в начале вегетационного периода и затем через каждые 3-4 недели.\n\n
+
+3. Поддержка растений:\n
+   - Используйте каркасы или опоры для поддержки растений, особенно если это крупные или тяжелые сорта перца.\n\n
+
+4. Прополка и мульчирование:\n
+   - Регулярно пропалывайте грядку и мульчируйте почву, чтобы сохранить влагу и уменьшить рост сорняков.\n\n
+
+5. Защита от болезней и вредителей:\n
+   - Следите за состоянием растений и применяйте необходимые меры, чтобы предотвратить болезни и защитить от вредителей.\n\n
+
+ Сбор урожая:\n
+
+1. Определение готовности:\n
+   - Сбор перца производите, когда плоды достигнут нужного размера и цвета. Обычно они собираются, когда становятся твердыми и имеют яркую окраску.\n\n
+
+2. Хранение урожая:\n
+   - Храните перец в прохладном и сухом месте. Избегайте контакта с сыростью, чтобы предотвратить гниение.\n\n"/>
+            </ScrollView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Заметки"
+                android:background="@color/but"
+                android:textColor="@color/white"
+                android:textSize="5mm"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Заметки"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:textColorHint="@color/black"
+                android:id="@+id/edtxt_tom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Настройки уведомлений"
+                android:background="@color/but"
+                android:textColor="@color/white"
+                android:textSize="5mm"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Периодичность отправки уведомлений(в часах)"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:textColorHint="@color/black"
+                android:id="@+id/edtxt_nt"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_ad"
+                android:text="Установить"
+                android:textSize="5mm"
+                android:onClick="btn_ad"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_del"
+                android:text="Удалить"
+                android:textSize="5mm"
+                android:onClick="btn_del"/>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom"
+        android:text="Обратно"
+        android:textSize="5mm"
+        android:onClick="home"/>
+
+</RelativeLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vegetables_list.onion"
+    android:background="@drawable/fon">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:text="Лук"
+        android:background="@color/but"
+        android:textSize="5mm"
+        android:id="@+id/top"
+        android:textColor="@color/white"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/top"
+        android:layout_above="@id/bottom"
+        android:scrollbars="vertical"
+        android:layout_marginLeft="2mm"
+        android:layout_marginRight="2mm">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fon"
+                    android:textColor="@color/white"
+                    android:textSize="3mm"
+                    android:text="Подготовка к посадке:\n\n
+
+1. Выбор сорта лука:\n
+   Выберите сорт лука в зависимости от ваших предпочтений:\n лук-порей, репчатый лук, зеленый лук и т.д.\n\n
+
+2. Подготовка почвы:\n
+   Лук предпочитает рыхлую, удобренную почву с хорошей дренажной способностью. Добавьте компост или перегной для обеспечения плодородия.\n\n
+
+3. Выбор места:\n
+   Расположите грядку на солнечном месте. Лук также хорошо растет в легкой полутени. Учтите, что лук-порей предпочитает более влажные условия, чем репчатый лук.\n\n
+
+ Посадка лука:\n\n
+
+1. Посев семян (при выращивании из семян):\n
+   - Посейте семена лука в грядку в начале весны или осени, в зависимости от сорта.\n
+   - Глубина посева зависит от вида лука, но обычно составляет 1-2 см.\n\n
+
+2. Луковичные саженцы (при выращивании из луковиц):\n
+   - Саженцы репчатого лука или лук-порея можно посадить в грядку весной или осенью на глубину около 5 см с интервалом 10-15 см.\n\n
+
+ Уход за луком:\n\n
+
+1. Полив:\n
+   - Регулярно поливайте лук, особенно в период сухости. Избегайте переувлажнения, чтобы предотвратить гниение луковиц.\n\n
+
+2. Удобрение:\n
+   - Внесите удобрение для луковичных культур в начале вегетационного периода.\n\n
+
+3. Прополка:\n
+   - Поддерживайте грядку в чистоте, регулярно удаляя сорняки.\n\n
+
+4. Мульчирование:\n
+   - Мульчируйте почву вокруг растений, чтобы удерживать влагу и уменьшить рост сорняков.\n\n
+
+ Сбор урожая:\n\n
+
+1. Определение готовности:\n
+   - Сбор лука производите, когда луковицы достигнут нужного размера, а лук-порей — после того, как стебли станут достаточно толстыми.\n\n
+
+2. Сушка и хранение:\n
+   - После сбора, высушите лук на солнце, а затем храните его в прохладном, сухом месте."/>
+            </ScrollView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Заметки"
+                android:background="@color/but"
+                android:textColor="@color/white"
+                android:textSize="5mm"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Заметки"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:textColorHint="@color/black"
+                android:id="@+id/edtxt_tom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Настройки уведомлений"
+                android:background="@color/but"
+                android:textColor="@color/white"
+                android:textSize="5mm"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Периодичность отправки уведомлений(в часах)"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:textColorHint="@color/black"
+                android:id="@+id/edtxt_nt"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_ad"
+                android:text="Установить"
+                android:textSize="5mm"
+                android:onClick="btn_ad"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_del"
+                android:text="Удалить"
+                android:textSize="5mm"
+                android:onClick="btn_del"/>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom"
+        android:text="Обратно"
+        android:textSize="5mm"
+        android:onClick="home"/>
+
+</RelativeLayout>

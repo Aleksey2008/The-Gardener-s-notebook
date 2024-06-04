@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vegetables_list.cucumber"
+    android:background="@drawable/fon">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:text="Огурцы"
+        android:background="@color/but"
+        android:textSize="5mm"
+        android:id="@+id/top"
+        android:textColor="@color/white"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/top"
+        android:layout_above="@id/bottom"
+        android:scrollbars="vertical"
+        android:layout_marginLeft="2mm"
+        android:layout_marginRight="2mm">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fon"
+                    android:textColor="@color/white"
+                    android:textSize="3mm"
+                    android:text="Подготовка к посадке:\n\n
+
+1. Выбор сорта огурцов:\n
+   Выберите сорт огурцов в зависимости от ваших предпочтений:\n для свежего употребления, консервирования или салатов.\n\n
+
+2. Подготовка почвы:\n
+   Огурцы предпочитают плодородные, легкие почвы с хорошей дренажной способностью. Добавьте в почву компост или перегной.\n\n
+
+3. Выбор места:\n
+   Расположите грядку на солнечном месте с защитой от холодных ветров. Огурцы любят тепло, поэтому обеспечьте им теплую среду.\n\n
+
+ Посадка огурцов:\n\n
+
+1. Семена:\n
+   - Если вы сеете огурцы из семян, начинайте процесс за 2-4 недели до последнего заморозка.\n
+   - Глубина посева семян - 1-2 см.\n\n
+
+2. Рассада:\n
+   - Рассаду можно высаживать в грядку после того, как минует угроза заморозков.\n
+   - Расстояние между растениями - около 30-40 см.\n\n
+
+ Уход за огурцами:\n\n
+
+1. Полив:\n
+   - Огурцы требуют регулярного полива, особенно в период плодоношения. Избегайте пересушивания почвы.\n\n
+
+2. Удобрение:\n
+   - Подкармливайте огурцы удобрением для плодовых культур в начале сезона и в середине периода роста.\n\n
+
+3. Поддержка растений:\n
+   - Используйте вертикальные опоры, каркасы или сетки для поддержки растений. Это помогает предотвратить загромождение и обеспечивает лучшую вентиляцию.\n\n
+
+4. Прополка и мульчирование:\n
+   - Регулярно пропалывайте грядку и мульчируйте почву, чтобы сохранить влагу и предотвратить рост сорняков.\n\n
+
+5. Обрезка:\n
+   - Проводите обрезку боковых побегов, чтобы стимулировать рост плодов и облегчить доступ света и воздуха к растениям.\n\n
+
+ Сбор урожая:\n\n
+
+1. Определение готовности:\n
+   - Сбор огурцов производите, когда они достигнут нужной длины и диаметра, но ещё до полного созревания, чтобы поддерживать плодоношение.\n\n
+
+2. Регулярный сбор:\n
+   - Собирайте огурцы регулярно, чтобы стимулировать новый рост и продолжительное плодоношение."/>
+            </ScrollView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Заметки"
+                android:background="@color/but"
+                android:textColor="@color/white"
+                android:textSize="5mm"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Заметки"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:textColorHint="@color/black"
+                android:id="@+id/edtxt_tom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Настройки уведомлений"
+                android:background="@color/but"
+                android:textColor="@color/white"
+                android:textSize="5mm"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Периодичность отправки уведомлений(в часах)"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:textColorHint="@color/black"
+                android:id="@+id/edtxt_nt"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_ad"
+                android:text="Установить"
+                android:textSize="5mm"
+                android:onClick="btn_ad"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_del"
+                android:text="Удалить"
+                android:textSize="5mm"
+                android:onClick="btn_del"/>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom"
+        android:text="Обратно"
+        android:textSize="5mm"
+        android:onClick="home"/>
+
+</RelativeLayout>
+

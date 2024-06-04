@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vegetables_list.zucchini"
+    android:background="@drawable/fon">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:text="Кабачки"
+        android:background="@color/but"
+        android:textSize="5mm"
+        android:id="@+id/top"
+        android:textColor="@color/white"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/top"
+        android:layout_above="@id/bottom"
+        android:scrollbars="vertical"
+        android:layout_marginLeft="2mm"
+        android:layout_marginRight="2mm">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fon"
+                    android:textColor="@color/white"
+                    android:textSize="3mm"
+                    android:text="Подготовка к посадке:\n\n
+
+1. Выбор сорта кабачков:\n
+   Выберите сорт кабачков в зависимости от ваших предпочтений — кустовые или ползучие, зеленые или желтые.\n\n
+
+2. Подготовка почвы:\n
+   Кабачки предпочитают легкую, рыхлую, плодородную почву. Удобрьте почву компостом или перегнойем.\n\n
+
+3. Выбор места:\n
+   Расположите грядку на солнечном участке с хорошей вентиляцией.\n\n
+
+ Посадка кабачков:\n\n
+
+1. Прямой посев или рассада:\n
+   - Прямой посев проводите в грунт после ухода за последними заморозками, когда почва прогреется.\n
+   - Рассаду можно выращивать в закрытом помещении и пересаживать на грядку, когда растения станут достаточно крепкими (после 3-4 недель).\n\n
+
+ Уход за кабачками:\n\n
+
+1. Полив:\n
+   - Регулярно поливайте кабачки, поддерживая почву влажной. Избегайте переувлажнения, чтобы предотвратить гниение корней.\n\n
+
+2. Удобрение:\n
+   - Внесите удобрение для тыквенных культур в начале вегетационного периода и затем через каждые 3-4 недели.\n\n
+
+3. Прополка:\n
+   - Регулярно удаляйте сорняки вокруг растений, чтобы предотвратить конкуренцию за влагу и питательные вещества.\n\n
+
+4. Поддержка растений:\n
+   - Кустовые сорта кабачков могут не требовать поддержки, но для ползучих сортов установите опоры, чтобы облегчить сбор плодов и предотвратить повреждение растений.\n\n
+
+ Сбор урожая:\n\n
+
+1. Определение готовности:\n
+   - Сбор кабачков производите, когда они достигнут нужного размера и еще не переросли, так чтобы их кожица оставалась мягкой.\n\n
+
+2. Регулярный сбор:\n
+   - Регулярно собирайте кабачки, чтобы стимулировать новый рост и продолжительное плодоношение.\n\n
+
+ Хранение кабачков:\n\n
+
+1. Свежие кабачки:\n
+   - Свежие кабачки лучше всего хранить в холодильнике и использовать в течение нескольких дней.\n\n
+
+2. Замораживание:\n
+   - Если у вас много урожая, вы можете заморозить кабачки после предварительной обработки."/>
+            </ScrollView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Заметки"
+                android:background="@color/but"
+                android:textColor="@color/white"
+                android:textSize="5mm"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Заметки"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:textColorHint="@color/black"
+                android:id="@+id/edtxt_tom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Настройки уведомлений"
+                android:background="@color/but"
+                android:textColor="@color/white"
+                android:textSize="5mm"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Периодичность отправки уведомлений(в часах)"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:textColorHint="@color/black"
+                android:id="@+id/edtxt_nt"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_ad"
+                android:text="Установить"
+                android:textSize="5mm"
+                android:onClick="btn_ad"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_del"
+                android:text="Удалить"
+                android:textSize="5mm"
+                android:onClick="btn_del"/>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom"
+        android:text="Обратно"
+        android:textSize="5mm"
+        android:onClick="home"/>
+
+</RelativeLayout>
